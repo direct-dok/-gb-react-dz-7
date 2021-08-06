@@ -7,7 +7,7 @@ export const addRobotMessageThunkCreator = (chatMessages, id) => {
 
     return (dispatch) => {
         setTimeout(
-            () => dispatch(addNewMessage(payload)), // Сюда должен прийти уже измененный стейт с сообщение от робота
+            () => dispatch(addNewMessage(payload)), // Сюда должен прийти уже измененный стейт с сообщением от робота
             2000
         )
     }
